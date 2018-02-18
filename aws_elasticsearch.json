@@ -1,0 +1,37 @@
+{
+  "access_key": "your_access_key",
+  "secret_key": "your_secret_key",
+  "region": "your_region",
+  "availability_zone": "your_zone",
+  "security_groups": "your_sg",
+  "keypair_name": "your_key",
+  "ssh_username": "your_username",
+  "ssh_private_key_path": "your_ssh_key.pem",
+  "subnet_id" : "your_subnet",
+  "instances": {
+    "elastic-5.6.7-master01": {
+      "ami_id": "your_ami",
+      "instance_type": "your_instance_type",
+	    "tags": {
+        "Name": "elastic-5.6-master01",
+        "Role": "elastic-master"
+      }
+    },
+    "elastic-5.6.7-client01": {
+      "ami_id": "your_ami",
+      "instance_type": "your_instance_type",
+      "tags": {
+        "Name": "elastic-5.6-client01",
+        "Role": "elastic-client"
+      }
+    },
+    "elastic-5.6.7-data01": {
+      "ami_id": "your_ami",
+      "instance_type": "your_instance_type",
+      "tags": {
+        "Name": "elastic-5.6-data01",
+        "Role": "elastic-data"
+      }
+    }
+  }
+}
